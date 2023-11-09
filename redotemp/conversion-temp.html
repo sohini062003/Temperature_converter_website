@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link rel="stylesheet" href="temp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Temperature Converter</title>
+  </head>
+
+  <body>
+    <main>
+        <div class="navbar">
+            <h1>TEMPERATURE CONVERTER</h1>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">MORE</a></li>
+            
+            </ul>
+        </div>
+        <p>CONVERT HERE...</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card card-body text-center pt-4">
+                        <!-- Main form -->
+                        <form id="temp-form">
+
+                            <!-- Input Elements -->
+                        <div class="box">
+                            <div class="form-group">
+                                <select id="tempUnit" class="form-select" aria-label="Default select example">
+                                    <option selected id="select-text">Select Your Desire Temperature Unit</option>
+                                    <option value="fahrenheit">Fahrenheit</option>
+                                    <option value="celsius">Celsius</option>
+                                    <option value="kelvin">Kelvin</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="number" class="form-control" id="UIinputValue" placeholder="Enter Your Value">
+                                    <span class="input-group-text" id="UIinputValueUnit"></span>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="form-group cal-btn ">
+                                <input type="submit" value="Calculate" class="btn btn-dark calculateBtn">
+                            </div>
+                        </form>
+
+                        <!-- Results -->
+                        <div class="form-group ">
+                            <div class="input-group ">
+                                <span class="input-group-text"> Value In Celsius:</span>
+                                <input type="number" class="form-control" id="result-celsius" disabled>
+                                <span  id="cel">&deg;C</span>
+                            </div>
+                            <div class="input-group ">
+                                <span class="input-group-text"> Value In Fahrenheit:</span>
+                                <input type="number" class="form-control" id="result-fahrenheit" disabled>
+                                <span id="far">&deg;F</span>
+                            </div>
+                            <div class="input-group ">
+                                <span class="input-group-text"> Value In Kelvin:</span>
+                                <input type="number" class="form-control" id="result-kelvin" disabled>
+                                <span  id="kel">&deg;K</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Contact us</p>
+            <div class="media">
+                <li><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+                <li><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></li>
+                
+            </div>
+        </footer>
+    </main>
+    <script src="temp.js"></script>
+  </body>
+</html>
